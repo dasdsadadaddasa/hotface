@@ -1,10 +1,10 @@
-# pkyx
+# hotface
 
-pkyx是基于Flask开发的一个比较网站，灵感来自于[VSChart](http://vschart.com)。
+hotface是基于Flask开发的一个比较网站，灵感来自于[VSChart](http://vschart.com)。
 
-demo: [pkyx](http://45.78.53.13)
+demo: [hotface](http://blog.csdn.net/maliao1123)
 
-[10天开发一个网站](http://tonnie17.github.io/2015/10/11/pkyx/)
+[flask开发资源（包括git开源项目和相关书籍）](http://blog.csdn.net/maliao1123)
 
 ## 安装依赖
 
