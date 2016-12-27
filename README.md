@@ -18,4 +18,8 @@ gunicorn wsgi:app -c gunicorn.conf
 
 or
 
+<<<<<<< HEAD
 python manage.py
+=======
+python manage.py 
+>>>>>>> 044f3444fb43e47e513bdd79795ed9953759b715
