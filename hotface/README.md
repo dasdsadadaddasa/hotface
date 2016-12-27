@@ -2,9 +2,9 @@
 
 HOTFACE是基于Flask开发的一个比较网站，灵感来自于[VSChart](http://vschart.com)。
 
-demo: [pkyx](http://45.78.53.13)
+demo: [HOTFACE](http://blog.csdn.net/maliao1123)
 
-[10天开发一个网站](http://tonnie17.github.io/2015/10/11/pkyx/)
+[flask开发全资源](http://blog.csdn.net/maliao1123)
 
 ## 安装依赖
 
