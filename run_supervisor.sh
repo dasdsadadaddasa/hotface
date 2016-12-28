@@ -1,1 +1,1 @@
-supervisord
+sudo  supervisord
