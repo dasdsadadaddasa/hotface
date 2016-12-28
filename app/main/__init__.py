@@ -1,4 +1,3 @@
-__author__ = 'tonnie.lwt@gmail.com'
 
 from flask import Blueprint
 
