@@ -1,4 +1,4 @@
-from app import app
+from flaskbb import create_app
+from flaskbb.configs.production import ProductionConfig
 
-if __name__ == '__main__':
-    app.run()
+flaskbb = create_app(config=ProductionConfig())
