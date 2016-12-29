@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.app
+    hotface.app
     ~~~~~~~~~~~
 
-    manages the app creation and configuration process
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 import os
 import logging

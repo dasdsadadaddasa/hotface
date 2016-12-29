@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.message.models
+    hotface.message.models
     ~~~~~~~~~~~~~~~~~~~~~~
 
-    The models for the conversations and messages are located here.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from sqlalchemy_utils import UUIDType
 

@@ -1,11 +1,8 @@
 """
-    flaskbb.configs.testing
+    hotface.configs.testing
     ~~~~~~~~~~~~~~~~~~~~
 
-    This is the FlaskBB's testing config.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flaskbb.configs.default import DefaultConfig
 
@@ -53,12 +50,12 @@ class TestingConfig(DefaultConfig):
     #MAIL_DEFAULT_SENDER = "noreply@example.org"
 
     # Google Mail Example
-    MAIL_SERVER = "smtp.gmail.com"
+    MAIL_SERVER = "smtp.163.com"
     MAIL_PORT = 465
     MAIL_USE_SSL = True
-    MAIL_USERNAME = "your_username@gmail.com"
-    MAIL_PASSWORD = "your_password"
-    MAIL_DEFAULT_SENDER = ("Your Name", "your_username@gmail.com")
+    MAIL_USERNAME = "linhanqiu1123@163.com"
+    MAIL_PASSWORD = "linhanqiu1123"
+    MAIL_DEFAULT_SENDER = ("linhanqiu", "linhanqiu1123@163.com")
 
     CELERY_ALWAYS_EAGER = True
     CELERY_RESULT_BACKEND = "cache"
@@ -66,4 +63,4 @@ class TestingConfig(DefaultConfig):
     CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 
     # The user who should recieve the error logs
-    ADMINS = ["your_admin_user@gmail.com"]
+    ADMINS = ["linhanqiu1123@163.com"]

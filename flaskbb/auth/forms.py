@@ -1,12 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.auth.forms
+    hotface.auth.forms
     ~~~~~~~~~~~~~~~~~~
 
-    It provides the forms that are needed for the auth views.
-
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask_wtf import Form
 from wtforms import (StringField, PasswordField, BooleanField, HiddenField,
@@ -23,6 +19,7 @@ USERNAME_RE = r'^[\w.+-]+$'
 is_username = regexp(USERNAME_RE,
                      message=_("You can only use letters, numbers or dashes."))
 
+#登陆验证表单
 
 class LoginForm(Form):
     login = StringField(_("Username or Email address"), validators=[
@@ -38,6 +35,7 @@ class LoginForm(Form):
 
     submit = SubmitField(_("Login"))
 
+#注册表单
 
 class RegisterForm(Form):
     username = StringField(_("Username"), validators=[

@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.user.views
+    hotface.user.views
     ~~~~~~~~~~~~~~~~~~
 
-    The user view handles the user profile
-    and the user settings from a signed in user.
-
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask import Blueprint, flash, request
 from flask_login import login_required, current_user

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 """
-    flaskbb.manage
+    hotface.manage
     ~~~~~~~~~~~~~~~~~~~~
 
     This script provides some easy to use commands for
@@ -14,8 +14,6 @@
           which would make the commands better seperated from each other
           and less confusing.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from __future__ import print_function
 import sys

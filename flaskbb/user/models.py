@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.user.models
+    hotface.user.models
     ~~~~~~~~~~~~~~~~~~~
 
-    This module provides the models for the user.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 import os
 

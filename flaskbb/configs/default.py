@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.configs.default
+    hotface.configs.default
     ~~~~~~~~~~~~~~~~~~~~~~~
 
-    This is the default configuration for FlaskBB that every site should have.
-    You can override these configuration variables in another class.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 import os
 import sys

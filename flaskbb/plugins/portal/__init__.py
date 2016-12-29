@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.plugins.portal
+    hotface.plugins.portal
     ~~~~~~~~~~~~~~~~~~~~~~
 
-    A Portal Plugin for FlaskBB.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask_plugins import connect_event
 

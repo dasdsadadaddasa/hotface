@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.email
+    hotface.email
     ~~~~~~~~~~~~~
 
-    This module adds the functionality to send emails
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask import render_template
 from flask_mail import Message

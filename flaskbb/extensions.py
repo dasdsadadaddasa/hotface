@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.extensions
+    hotface.extensions
     ~~~~~~~~~~~~~~~~~~
 
-    The extensions that are used by FlaskBB.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from celery import Celery
 from flask_allows import Allows

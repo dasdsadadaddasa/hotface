@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.fixtures.groups
+    hotface.fixtures.groups
     ~~~~~~~~~~~~~~~~~~~~~~~
 
-    The fixtures module for our groups.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 
 from collections import OrderedDict

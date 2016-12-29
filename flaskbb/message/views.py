@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.message.views
+    hotface.message.views
     ~~~~~~~~~~~~~~~~~~~~~
 
-    The views for the conversations and messages are located in this module.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 import uuid
 

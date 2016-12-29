@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.forum.forms
+    hotface.forum.forms
     ~~~~~~~~~~~~~~~~~~~
 
-    It provides the forms that are needed for the forum views.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask_wtf import Form
 from wtforms import (TextAreaField, StringField, SelectMultipleField,

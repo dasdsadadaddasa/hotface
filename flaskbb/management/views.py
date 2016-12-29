@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.management.views
+    hotface.management.views
     ~~~~~~~~~~~~~~~~~~~~~~~~
 
-    This module handles the management views.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 import sys
 

@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb
+    hotface
     ~~~~~~~
 
-    FlaskBB is a forum software written in python using the
-    microframework Flask.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 
 __version__ = '1.0.dev0'

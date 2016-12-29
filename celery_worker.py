@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-    flaskbb.celery_worker
+    hotface.celery_worker
     ~~~~~~~~~~~~~~~~~~~~~
 
     Prepares the celery app for the celery worker.

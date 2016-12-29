@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.forum.models
+    hotface.forum.models
     ~~~~~~~~~~~~~~~~~~~~
 
-    It provides the models for the forum
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from datetime import timedelta
 

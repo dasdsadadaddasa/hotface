@@ -1,8 +1,6 @@
 """
-FlaskBB
+hotface
 =======
-
-FlaskBB is a forum software written in Python using the microframework Flask.
 
 
 And Easy to Setup

@@ -1,12 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.user.forms
+    hotface.user.forms
     ~~~~~~~~~~~~~~~~~~
 
-    It provides the forms that are needed for the user views.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from flask_login import current_user
 from flask_wtf import Form

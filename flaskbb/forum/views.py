@@ -1,13 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-    flaskbb.forum.views
+    hotface.forum.views
     ~~~~~~~~~~~~~~~~~~~
 
-    This module handles the forum logic like creating and viewing
-    topics and posts.
 
-    :copyright: (c) 2014 by the FlaskBB Team.
-    :license: BSD, see LICENSE for more details.
 """
 from sqlalchemy import asc, desc
 from flask import Blueprint, redirect, url_for, current_app, request, flash
