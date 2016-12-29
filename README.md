@@ -8,8 +8,14 @@
 [FlaskBB](http://flaskbb.org) is a forum software written in python
 using the micro framework Flask.
 
+<<<<<<< HEAD
 
 ## FEATURES
+=======
+[flask开发资源（包括git开源项目和相关书籍）](https://github.com/humiaozuzu/awesome-flask)
+
+## 一、安装依赖（保证网站运行的相关库）
+>>>>>>> 03a70061620aef6bbdfbbb5e5e034ae42c8e4d0c
 
 * A Bulletin Board like FluxBB or DjangoBB in Flask
 * Private Messages
@@ -23,10 +29,19 @@ using the micro framework Flask.
 * Plugin System
 
 
+<<<<<<< HEAD
 ## TODO
 
 * See the github [issues](https://github.com/sh4nks/flaskbb/issues?state=open)
 
+=======
+## 二、修改配置文件（保证在本地能够正确运行）
+```
+app/config.py
+```
+
+## 三、多种方式部署运行
+>>>>>>> 03a70061620aef6bbdfbbb5e5e034ae42c8e4d0c
 
 ## INSTALLATION
 
