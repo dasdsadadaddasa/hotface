@@ -109,13 +109,13 @@ class DefaultConfig(object):
     ADMINS = ["admin@example.org"]
 
     # Flask-Redis
-    REDIS_ENABLED = False
-    REDIS_URL = "redis://localhost:6379"  # or with a password: "redis://:password@localhost:6379"
+    REDIS_ENABLED = True
+    REDIS_URL = "redis://:linhanqiu@localhost:6379"  # or with a password: "redis://:password@localhost:6379"
     REDIS_DATABASE = 0
 
     # Celery
-    CELERY_BROKER_URL = 'redis://localhost:6379'
-    CELERY_RESULT_BACKEND = 'redis://localhost:6379'
+    CELERY_BROKER_URL = 'redis://:linhanqiu@localhost:6379'
+    CELERY_RESULT_BACKEND = 'redis://:linhanqiu@localhost:6379'
 
     # URL Prefixes
     FORUM_URL_PREFIX = ""
