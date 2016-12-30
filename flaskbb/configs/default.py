@@ -102,11 +102,11 @@ class DefaultConfig(object):
     MAIL_PORT = 25
     MAIL_USE_SSL = False
     MAIL_USE_TLS = False
-    MAIL_USERNAME = "noreply@example.org"
-    MAIL_PASSWORD = ""
-    MAIL_DEFAULT_SENDER = ("Default Sender", "noreply@example.org")
+    MAIL_USERNAME = "linhanqiu1123@163.com"
+    MAIL_PASSWORD = "linhanqiu1123."
+    MAIL_DEFAULT_SENDER = ("Hotface", "linhanqiu1123@163.com")
     # Where to logger should send the emails to
-    ADMINS = ["admin@example.org"]
+    ADMINS = ["linhanqiu1123@163.com"]
 
     # Flask-Redis
     REDIS_ENABLED = True
