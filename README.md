@@ -67,27 +67,27 @@ $ sudo systemctl enable redis
 
 Configuration
 =====
-FlaskBB comes with the ability to generate the configuration file for you. Just run:
+Hotface  comes with the ability to generate the configuration file for you. Just run:
 
-flaskbb makeconfig
+Hotface  makeconfig
 
-and answer its questions. By default it will try to save the configuration file with the name flaskbb.cfg in FlaskBB’s root folder.
+and answer its questions. By default it will try to save the configuration file with the name flaskbb.cfg in Hotface ’s root folder.
 
 You can also omit the questions, which will generate a developemnt configuration by passing the -d/--development option to it:
 
-flaskbb makeconfig -d
+Hotface  makeconfig -d
 
 In previous versions, FlaskBB tried to assume which configuration file to use, which it will no longer do. Now, by default, it will load a config with some sane defaults (i.e. debug off) but thats it. You can either pass an import string to a config object or the path to the (python) config file.
 
 For example, if you are using a generated config file it looks something like this:
 
-flaskbb --config flaskbb.cfg run
-[+] Using config from: /path/to/flaskbb/flaskbb.cfg
+Hotface  --config Hotface .cfg run
+[+] Using config from: /path/to/Hotface /Hotface .cfg
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-and this is how you do it by using an import string. Be sure that it is importable from within FlaskBB:
+and this is how you do it by using an import string. Be sure that it is importable from within Hotface :
 
-flaskbb --config flaskbb.configs.default.DefaultConfig run
+Hotface  --config Hotface .configs.default.DefaultConfig run
 
 Development
 =====
@@ -101,21 +101,21 @@ make run
 
 or if you like to type a little bit more, the CLI:
 
-flaskbb --config flaskbb.cfg run
+Hotface --config flaskbb.cfg run
 
 Production
 =======
-FlaskBB already sets some sane defaults, so you shouldn’t have to change much. To make this whole process a little bit easier for you, we have created a little wizard which will ask you some questions and with the answers you provide it will generate a configuration for you. You can of course further adjust the generated configuration.
+Hotface already sets some sane defaults, so you shouldn’t have to change much. To make this whole process a little bit easier for you, we have created a little wizard which will ask you some questions and with the answers you provide it will generate a configuration for you. You can of course further adjust the generated configuration.
 
 The setup wizard can be started with:
 
-flaskbb makeconfig
+Hotface makeconfig
 
-These are the only settings you have to make sure to setup accordingly if you want to run FlaskBB in production:
+These are the only settings you have to make sure to setup accordingly if you want to run Hotface in production:
 
     SERVER_NAME = "example.org"
     PREFERRED_URL_SCHEME = "https"
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///path/to/flaskbb.sqlite'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///path/to/Hotface.sqlite'
     SECRET_KEY = "secret key"
     WTF_CSRF_SECRET_KEY = "secret key"
 
@@ -179,11 +179,11 @@ Upgrading
 
 If the database models changed after a release, you have to run the upgrade command:
 
-flaskbb db upgrade
+Hotface db upgrade
 
 Deploying
 
-This chapter will describe how to set up Supervisor + uWSGI + nginx for FlaskBB as well as document how to use the built-in WSGI server (gunicorn) that can be used in a productive environment.
+This chapter will describe how to set up Supervisor + uWSGI + nginx for Hotface as well as document how to use the built-in WSGI server (gunicorn) that can be used in a productive environment.
 Supervisor
 
 Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems.
@@ -217,23 +217,23 @@ $ sudo apt-get install uwsgi uwsgi-plugin-python
 For the configuration, you need to create a file in the /etc/uwsgi/apps-available directory. In this example, I will call the file flaskbb.ini. After that, you can start with configuring it. My config looks like this for flaskbb.org (see below). As you might have noticed, I’m using a own user for my apps whose home directory is located at /var/apps/. In this directory there are living all my Flask apps.
 
 [uwsgi]
-base = /var/apps/flaskbb
-home = /var/apps/.virtualenvs/flaskbb/
+base = /var/apps/Hotface
+home = /var/apps/.virtualenvs/Hotface/
 pythonpath = %(base)
 socket = 127.0.0.1:30002
 module = wsgi
-callable = flaskbb
+callable = Hotface
 uid = apps
 gid = apps
-logto = /var/apps/flaskbb/logs/uwsgi.log
+logto = /var/apps/Hotface/logs/uwsgi.log
 plugins = python
 
-base 	/path/to/flaskbb 	The folder where your flaskbb application lives
-home 	/path/to/virtualenv/folder 	The virtualenv folder for your flaskbb application
-pythonpath 	/path/to/flaskbb 	The same as base
+base 	/path/to/Hotface	The folder where your Hotface application lives
+home 	/path/to/virtualenv/folder 	The virtualenv folder for your Hotface application
+pythonpath 	/path/to/Hotface	The same as base
 socket 	socket 	This can be either a ip or the path to a socket (don’t forget to change that in your nginx config)
-module 	wsgi.py 	This is the file located in the root directory from flaskbb (where manage.py lives).
-callable 	flaskbb 	The callable is application you have created in the wsgi.py file
+module 	wsgi.py 	This is the file located in the root directory from Hotface (where manage.py lives).
+callable 	Hotface The callable is application you have created in the wsgi.py file
 uid 	your_user 	The user who should be used. NEVER use root!
 gid 	your_group 	The group who should be used.
 logto 	/path/to/log/file 	The path to your uwsgi logfile
@@ -241,7 +241,7 @@ plugins 	python 	We need the python plugin
 
 Don’t forget to create a symlink to /etc/uwsgi/apps-enabled.
 
-ln -s /etc/uwsgi/apps-available/flaskbb /etc/uwsgi/apps-enabled/flaskbb
+ln -s /etc/uwsgi/apps-available/Hotface /etc/uwsgi/apps-enabled/flaskbb
 
 gunicorn
 
@@ -249,7 +249,7 @@ Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX.
 
 It’s a pre-fork worker model ported from Ruby’s Unicorn project. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.
 
-This is probably the easiest way to run a FlaskBB instance. Just install gunicorn via pip inside your virtualenv:
+This is probably the easiest way to run a Hotface instance. Just install gunicorn via pip inside your virtualenv:
 
 pip install gunicorn
 
@@ -257,47 +257,47 @@ FlaskBB has an built-in command to gunicorn:
 
 flaskbb start
 
-To see a full list of options either type flaskbb start --help or visit the cli docs.
+To see a full list of options either type Hotface start --help or visit the cli docs.
 nginx
 
 nginx [engine x] is an HTTP and reverse proxy server, as well as a mail proxy server, written by Igor Sysoev.
 
-The nginx config is pretty straightforward. Again, this is how I use it for FlaskBB. Just copy the snippet below and paste it to, for example /etc/nginx/sites-available/flaskbb. The only thing left is, that you need to adjust the server_name to your domain and the paths in access_log, error_log. Also, don’t forget to adjust the paths in the alias es, as well as the socket address in uwsgi_pass.
+The nginx config is pretty straightforward. Again, this is how I use it for Hotface. Just copy the snippet below and paste it to, for example /etc/nginx/sites-available/Hotface. The only thing left is, that you need to adjust the server_name to your domain and the paths in access_log, error_log. Also, don’t forget to adjust the paths in the alias es, as well as the socket address in uwsgi_pass.
 
 server {
     listen 80;
-    server_name forums.flaskbb.org;
+    server_name forums.Hotface.org;
 
-    access_log /var/log/nginx/access.forums.flaskbb.log;
-    error_log /var/log/nginx/error.forums.flaskbb.log;
+    access_log /var/log/nginx/access.forums.Hotface.log;
+    error_log /var/log/nginx/error.forums.Hotface.log;
 
     location / {
-        try_files $uri @flaskbb;
+        try_files $uri @Hotface;
     }
 
     # Static files
     location /static {
-       alias /var/apps/flaskbb/flaskbb/static/;
+       alias /var/apps/Hotface/Hotface/static/;
     }
 
     location ~ ^/_themes/([^/]+)/(.*)$ {
-        alias /var/apps/flaskbb/flaskbb/themes/$1/static/$2;
+        alias /var/apps/Hotface/Hotface/themes/$1/static/$2;
     }
 
     # robots.txt
     location /robots.txt {
-        alias /var/apps/flaskbb/flaskbb/static/robots.txt;
+        alias /var/apps/Hotface/Hotface/static/robots.txt;
     }
 
-    location @flaskbb {
+    location @Hotface {
         uwsgi_pass 127.0.0.1:30002;
         include uwsgi_params;
     }
 }
 
-If you wish to use gunicorn instead of uwsgi just replace the location @flaskbb with this:
+If you wish to use gunicorn instead of uwsgi just replace the location @Hotface with this:
 
-location @flaskbb {
+location @Hotface {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto $scheme;
     proxy_set_header Host $http_host;
