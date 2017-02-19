@@ -151,7 +151,7 @@ Mail Examples
 Both methods are included in the example configs.
 
 Google Mail
-
+====
 MAIL_SERVER = "smtp.gmail.com"
 MAIL_PORT = 465
 MAIL_USE_SSL = True
@@ -169,7 +169,7 @@ MAIL_PASSWORD = ""
 MAIL_DEFAULT_SENDER = "noreply@example.org"
 
 Installation
-
+====
 For a guided install, run:
 
 $ make install
@@ -184,8 +184,9 @@ Hotface db upgrade
 Deploying
 
 This chapter will describe how to set up Supervisor + uWSGI + nginx for Hotface as well as document how to use the built-in WSGI server (gunicorn) that can be used in a productive environment.
-Supervisor
 
+Supervisor
+====
 Supervisor is a client/server system that allows its users to monitor and control a number of processes on UNIX-like operating systems.
 
 To install supervisor on Debian, you need to fire up this command:
@@ -207,7 +208,7 @@ autorestart=true
 redirect_stderr=true
 
 uWSGI
-
+====
 uWSGI is a web application solution with batteries included.
 
 To get started with uWSGI, you need to install it first. You’ll also need the python plugin to serve python apps. This can be done with:
@@ -244,7 +245,7 @@ Don’t forget to create a symlink to /etc/uwsgi/apps-enabled.
 ln -s /etc/uwsgi/apps-available/Hotface /etc/uwsgi/apps-enabled/flaskbb
 
 gunicorn
-
+====
 Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX.
 
 It’s a pre-fork worker model ported from Ruby’s Unicorn project. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.
@@ -253,10 +254,10 @@ This is probably the easiest way to run a Hotface instance. Just install gunicor
 
 pip install gunicorn
 
-FlaskBB has an built-in command to gunicorn:
+Hotface has an built-in command to gunicorn:
 
-flaskbb start
-
+Hotface start
+====
 To see a full list of options either type Hotface start --help or visit the cli docs.
 nginx
 
